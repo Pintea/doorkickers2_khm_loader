@@ -198,7 +198,7 @@ void CLoader::ReadGeometry(sObjectMesh* pMesh)
 		{
 			ReadBytesSkip(sizeof(Vector2) * pMesh->numVertices);
 			//m_pFile->Seek(sizeof(Vector2) * pMesh->numVertices, File::SEEK_POS_CUR);
-			continue; // TODO: we don't need these for now,  will see if necessary
+			continue; // TODO: we don't need these for now,	 will see if necessary
 		}
 
 		pMesh->pTexCoords[i] = (Vector2*)ReadBytes(sizeof(Vector2) * pMesh->numVertices);

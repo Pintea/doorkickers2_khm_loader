@@ -153,7 +153,7 @@ namespace KHM
 	//
 
 	// TODO: could be made better for runtime, since we only access the object names once, but the mask itself many times per frame
-	//  we should either keep a bitset or a bool masks[numBones]. The names should be kept in a different array, only for debugging purposes
+	//	we should either keep a bitset or a bool masks[numBones]. The names should be kept in a different array, only for debugging purposes
 	struct sAnimationMaskEntry // keep 4-byte aligned
 	{
 		char					szObjectName[KHM_MAX_OBJECT_NAME]; // object masked
@@ -174,8 +174,8 @@ namespace KHM
 	struct sAnimation
 	{
 		// TODO: this layout doesn't make much sense. 
-		//  numNodeAnimations should be equal to the number of bones, so not needed here. 
-		//  pNodeAnimations is definitely not needed, maybe only for debugging purposes 
+		//	numNodeAnimations should be equal to the number of bones, so not needed here. 
+		//	pNodeAnimations is definitely not needed, maybe only for debugging purposes 
 
 		//sNodeAnimation*		pNodeAnimations = NULL; // not used anymore
 		sNodeTransform*			pNodeTransforms;	// size = (numNodeFrames * numNodes)
